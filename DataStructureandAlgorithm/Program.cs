@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select Programs\n 1.Binary search");
+                Console.WriteLine("Select Programs\n 1.Binary search\n 2.Bubble sort");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -15,6 +15,11 @@
                         BinarySearch binarysearch = new BinarySearch();
                         binarysearch.Search(@"C:\Users\Suraj Sinha\OneDrive\Desktop\Bridgelabz\DataStructureAndAlgorithm\DataStructureandAlgorithm\Words.txt");
                         break;
+                    case 2:
+                        BubbleSort bubblesort = new BubbleSort();
+                        bubblesort.Sort(@"C:\Users\Suraj Sinha\OneDrive\Desktop\Bridgelabz\DataStructureAndAlgorithm\DataStructureandAlgorithm\Words.txt");
+                        break;
+
                 }
             }
         }
