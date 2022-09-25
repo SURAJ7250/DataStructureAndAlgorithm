@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select Programs\n 1.Binary search\n 2.Bubble sort\n 3.Anagram Detection\n 4.Check Prime Number\n 5.Check Number is Prime,palindrome or Anagram\n 6.Order List using Generics\n 7.String repalce\n 8.Balanced Parantheses");
+                Console.WriteLine("Select Programs\n 1.Binary search\n 2.Bubble sort\n 3.Anagram Detection\n 4.Check Prime Number\n 5.Check Number is Prime,palindrome or Anagram\n 6.Order List using Generics\n 7.String repalce\n 8.Balanced Parantheses\n 9.Banking Cash Counter");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -46,6 +46,10 @@
                     case 8:
                         BalancedParantheses balanceParentheses = new BalancedParantheses();
                         balanceParentheses.BalanceParantheses(@"C:\Users\Suraj Sinha\OneDrive\Desktop\Bridgelabz\DataStructureAndAlgorithm\DataStructureandAlgorithm\AirthmeticExpression.txt");
+                        break;
+                    case 9:
+                        BankingCashCounter bankCashCounter = new BankingCashCounter();
+                        bankCashCounter.ATM();
                         break;
                 }
             }
